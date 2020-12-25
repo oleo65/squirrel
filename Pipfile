@@ -3,10 +3,17 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[[source]]
+name = "olescloud"
+url = "https://pypi.olescloud.de/simple"
+verify_ssl = true
+
 [packages]
 django = "*"
 graphene-django = "*"
 django-filter = "*"
+twisted = {index = "olescloud",version = "==20.3.0"}
+channels = "*"
 
 [dev-packages]
 pytest = "*"
