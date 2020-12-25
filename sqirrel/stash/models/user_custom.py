@@ -3,11 +3,11 @@ from hashlib import md5
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-from .user_group import UserGroup
+from .facility import Facility
 
 
 class User(AbstractUser):
-    user_groups = models.ManyToManyField(UserGroup)
+    facilities = models.ManyToManyField(Facility)
 
     @property
     def gravatar_hash(self):
