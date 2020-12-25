@@ -1,8 +1,9 @@
 import graphene
 from .transaction import TransactionQuery
+from .product import ProductQuery
 
 
-class Query(TransactionQuery, graphene.ObjectType):
+class Query(ProductQuery, TransactionQuery, graphene.ObjectType):
     version = graphene.String(default_value="v0.1.0")
 
 
