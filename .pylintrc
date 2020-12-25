@@ -1,0 +1,15 @@
+[MASTER]
+disable=
+    C0114,
+    C0115,
+    C0116,
+    no-else-return,
+    too-few-public-methods,
+    too-many-ancestors
+
+[FORMAT]
+max-line-length=140
+
+[BASIC]
+class-naming-style=PascalCase
+variable-naming-style=snake_case
