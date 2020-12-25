@@ -30,12 +30,14 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'stash.apps.StashConfig',
+    'api.apps.ApiConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'graphene_django',
 ]
 
 MIDDLEWARE = [
@@ -116,3 +118,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'stash.User'
+
+# GraphQL
+GRAPHENE = {
+    "SCHEMA": 'api.schema.schema',
+}
