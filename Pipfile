@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+graphene-django = "*"
+django-filter = "*"
+
+[dev-packages]
+pytest = "*"
+pytest-django = "*"
+model-bakery = "*"
+yapf = "*"
+pylint = "*"
+pylint-django = "*"
+pytest-cov = "*"
+
+[requires]
+python_version = "3.8"
