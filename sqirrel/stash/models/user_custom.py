@@ -1,9 +1,12 @@
 from hashlib import md5
 
 from django.contrib.auth import get_user_model
+from django.db import models
+from .user_group import UserGroup
 
 
 class UserCustom(get_user_model()):
+    user_groups = models.ManyToManyField(UserGroup)
 
     class Meta:
         proxy = True
