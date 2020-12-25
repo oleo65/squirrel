@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'sqirrel.urls'
+ROOT_URLCONF = 'squirrel.urls'
 
 TEMPLATES = [
     {
@@ -68,8 +68,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'sqirrel.wsgi.application'
-ASGI_APPLICATION = 'sqirrel.asgi.application'
+WSGI_APPLICATION = 'squirrel.wsgi.application'
+ASGI_APPLICATION = 'squirrel.asgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases

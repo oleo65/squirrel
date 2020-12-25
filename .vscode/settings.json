@@ -9,6 +9,7 @@
         "--load-plugins",
         "pylint_django"
     ],
+    "python.linting.pylintPath": "/home/odendahl/.local/share/virtualenvs/squirrel-1qOjuxBP/bin/pylint",
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 30000,
     "files.insertFinalNewline": true,
@@ -17,9 +18,9 @@
     "python.testing.pytestEnabled": true,
     "python.pythonPath": "/home/odendahl/.local/share/virtualenvs/squirrel-1qOjuxBP/bin/python",
     "python.autoComplete.extraPaths": [
-        "./squirrel"
+        "sqirrel"
     ],
     "python.analysis.extraPaths": [
-        "./sqirrel"
+        "sqirrel"
     ],
 }
