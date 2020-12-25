@@ -1,15 +1,13 @@
 from hashlib import md5
 
-from django.contrib.auth import get_user_model
+from django.contrib.auth.models import AbstractUser
 from django.db import models
+
 from .user_group import UserGroup
 
 
-class UserCustom(get_user_model()):
+class User(AbstractUser):
     user_groups = models.ManyToManyField(UserGroup)
-
-    class Meta:
-        proxy = True
 
     @property
     def gravatar_hash(self):
