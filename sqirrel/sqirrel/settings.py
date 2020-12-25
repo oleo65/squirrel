@@ -121,5 +121,5 @@ AUTH_USER_MODEL = 'stash.User'
 
 # GraphQL
 GRAPHENE = {
-    "SCHEMA": 'api.schema.schema',
+    "SCHEMA": 'api.schema.root_schema.schema',
 }

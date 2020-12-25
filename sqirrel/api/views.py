@@ -2,7 +2,7 @@ from django.http.response import HttpResponse
 from django.views.generic.base import View
 from graphql.utils import schema_printer
 
-from .schema import schema
+from .schema.root_schema import schema
 
 
 class ApiSchema(View):
